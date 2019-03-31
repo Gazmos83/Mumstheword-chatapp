@@ -25,7 +25,12 @@
 /yarn-error.log
 
 /public/assets
+
+#Ignore Byebug command history file.
 .byebug_history
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# Prevents conflicts between Spring and Git when using Guard
+/spring/*.pid

@@ -1,1 +1,5 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+Pingu:
+  name: Pingulino
+  email: nunya@bidness.com
+  #There is no password column in the database. Password_digest needed.
+  password_digest: <%= User.digest('password') %>

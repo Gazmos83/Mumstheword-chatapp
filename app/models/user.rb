@@ -1,6 +1,8 @@
 class User < ApplicationRecord
   attr_accessor :remember_token
+
   before_save { email.downcase! }
+
   validates :name, presence: true, length: { maximum: 50 }
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]/i
@@ -8,7 +10,7 @@ class User < ApplicationRecord
                                     format: { with: VALID_EMAIL_REGEX},
                                     uniqueness: {case_sensitive: false }
   has_secure_password
-  validates :password, presence: true, length: { minimum: 6 }
+  validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
 
   # Returns the hash digest of the given string of a hash method
   # Cost is written to use mim cost params in tests and high cost params in production
@@ -44,7 +46,7 @@ class User < ApplicationRecord
  def authenticated?(attribute, token)
     digest = send("#{attribute}_digest")
     return false if digest.nil?
-    BCrypt::Password.new(digest).is_password?(token)
+    BCrypt::Password.new(digest).is_password?(remember_token)
   end
 
 

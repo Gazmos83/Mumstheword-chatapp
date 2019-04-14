@@ -18,8 +18,8 @@ class User < ApplicationRecord
   # Cost is written to use mim cost params in tests and high cost params in production
   # This speeds up test render without reducing security features
  def self.digest(string)
-   cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
-                                                 BCrypt::Engine.cost
+  cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
+                                                BCrypt::Engine.cost
    BCrypt::Password.create(string, cost: cost)
  end
 
@@ -30,13 +30,13 @@ class User < ApplicationRecord
 
  # Remembers a user in the database for use in PERSISTENT(!) sessions
  def remember
-   self.remember_token = User.new_token
+   remember_token = User.new_token
    update_attribute(:remember_digest, User.digest(remember_token))
  end
 
  # Returns true if the given token matches the digest.
- def authenticated?(remember_token)
-   digest = self.send("remember_digest")
+ def self.authenticated?(remember_token)
+   digest = send("remember_digest")
    return false if digest.nil?
    BCrypt::Password.new(remember_digest).is_password?(remember_token)
  end
@@ -49,7 +49,7 @@ class User < ApplicationRecord
  def authenticated?(attribute, token)
     digest = send("#{attribute}_digest")
     return false if digest.nil?
-    BCrypt::Password.new(digest).is_password?(remember_token)
+    BCrypt::Password.new(remember_digest).is_password?(remember_token)
   end
   private
 

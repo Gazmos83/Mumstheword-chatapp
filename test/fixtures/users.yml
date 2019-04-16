@@ -6,5 +6,5 @@ Pingu:
 
 Pinga:
   name: Pingulini
-  email: Dieomis@example.de
+  email: Dieomi@Altefrau.de
   password_digest: <%= User.digest('password') %>

@@ -12,7 +12,7 @@ gem "bootstrap-sass", ">= 3.4.1"
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
-gem 'sass-rails'
+gem 'sass-rails', '~> 5.0'
 
 #ruby-sass end-of-life alternative
 #gem 'sassc-rails'
@@ -36,7 +36,7 @@ gem 'bcrypt', '~> 3.1.12'
 # creates fake users from db:seed
 gem 'faker', '1.7.3'
 
-gem 'will_paginate', '~> 3.1.0', :require => nil
+gem 'will_paginate', '~> 3.1.0'
 gem 'bootstrap-will_paginate', '1.0.0'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

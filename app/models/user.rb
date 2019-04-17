@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  attr_accessor :remember_token
+  attr_accessor :remember_token, :activation_token
 
   before_save { email.downcase! }
 
@@ -43,11 +43,11 @@ class User < ApplicationRecord
    update_attribute(:remember_digest, nil)
  end
  # Returns true if the given token matches the digest.
- def authenticated?(attribute, token)
-    digest = send("#{attribute}_digest")
-    return false if digest.nil?
-    BCrypt::Password.new(digest).is_password?(remember_token)
-  end
+ #def authenticated?(attribute, token)
+  #  digest = send("#{attribute}_digest")
+  #  return false if digest.nil?
+  #  BCrypt::Password.new(digest).is_password?(remember_token)
+  #end
 
 
 end

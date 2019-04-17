@@ -3,8 +3,31 @@ Pingu:
   email: nunya@bidness.com
   #There is no password column in the database. Password_digest needed.
   password_digest: <%= User.digest('password') %>
+  admin: true
 
 Pinga:
   name: Pingulini
-  email: Dieomis@example.de
+  email: Dieomi@Altefrau.de
   password_digest: <%= User.digest('password') %>
+
+archer:
+  name: Sterling Archer
+  email: duchess@example.gov
+  password_digest: <%= User.digest('password') %>
+
+lana:
+  name: Lana Kane
+  email: hands@example.gov
+  password_digest: <%= User.digest('password') %>
+
+malory:
+  name: Malory Archer
+  email: boss@example.gov
+  password_digest: <%= User.digest('password') %>
+
+<% 30.times do |n| %>
+user_<%= n %>:
+  name:  <%= "User #{n}" %>
+  email: <%= "user-#{n}@example.com" %>
+  password_digest: <%= User.digest('password') %>
+<% end %>

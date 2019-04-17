@@ -6,18 +6,26 @@ Pingu:
   activated: true
   activated_at: <%= Time.zone.now %>
 
+Pinga:
+  name: Pingulini
+  email: Dieomi@altefrau.de
+  password_digest: <%= User.digest('password') %>
+  activated: true
+  activated_at: <%= Time.zone.now %>
+
+
 archer:
   name: Sterling Archer
   email: duchess@example.gov
   password_digest: <%= User.digest('password') %>
-  activated: true
+  activated: false
   activated_at: <%= Time.zone.now %>
 
 lana:
   name: Lana Kane
   email: hands@example.gov
   password_digest: <%= User.digest('password') %>
-  activated: true
+  activated: false
   activated_at: <%= Time.zone.now %>
 
 malory:

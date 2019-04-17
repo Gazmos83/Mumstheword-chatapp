@@ -5,37 +5,18 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-<<<<<<< HEAD
-User.create!(name:  "Pingu",
-             email: "Chimericano@gmail.com",
-             password:              "123456",
-             password_confirmation: "123456",
-             admin:     true,
-             activated: true,
-             activated_at: Time.zone.now)
-=======
-<<<<<<< HEAD
-User.create!(name:  "Mr Le Pew",
-             email: "kevin.louis.dath@gmail.com",
-             password:              "123456",
-             password_confirmation: "123456")
-=======
 User.create!(name:  "Pingu",
              email: "chimericano@gmail.com",
              password:              "123456",
              password_confirmation: "123456",
              admin: true)
->>>>>>> updating-users
->>>>>>> master
 
-30.times do |n|
+99.times do |n|
   name  = Faker::Name.name
   email = "example-#{n+1}@nunyabidness.org"
   password = "password"
   User.create!(name:  name,
                email: email,
                password:              password,
-               password_confirmation: password,
-               activated: true,
-               activated_at: Time.zone.now)
+               password_confirmation: password)
 end

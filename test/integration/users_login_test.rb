@@ -38,13 +38,8 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
         assert_select "a[href=?]", user_path(@user), count: 0
     end
 
-<<<<<<< HEAD
-        test "authenticated? should return false for a user with nil digest" do
-        assert_equal assigns[:user].remember_token, cookies['authenticity_token']
-=======
     test "authenticated? should return false for a user with nil digest" do
         assert_not @user.authenticated?('')
->>>>>>> master
     end
 
     test "login with remembering" do

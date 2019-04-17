@@ -1,8 +1,11 @@
 class User < ApplicationRecord
   attr_accessor :remember_token, :activation_token
+<<<<<<< HEAD
   before_save   :downcase_email
   before_create :create_activation_digest
 
+=======
+>>>>>>> master
 
 
   validates :name, presence: true, length: { maximum: 50 }
@@ -46,6 +49,7 @@ class User < ApplicationRecord
    update_attribute(:remember_digest, nil)
  end
  # Returns true if the given token matches the digest.
+<<<<<<< HEAD
  def authenticated?(attribute, token)
     digest = send("#{attribute}_digest")
     return false if digest.nil?
@@ -57,6 +61,13 @@ class User < ApplicationRecord
       def downcase_email
         self.email = email.downcase
       end
+=======
+ #def authenticated?(attribute, token)
+  #  digest = send("#{attribute}_digest")
+  #  return false if digest.nil?
+  #  BCrypt::Password.new(digest).is_password?(remember_token)
+  #end
+>>>>>>> master
 
       # Creates and assigns the activation token and digest.
       def create_activation_digest

@@ -35,6 +35,5 @@
 # Prevents conflicts between Spring and Git when using Guard
 /spring/*.pid
 
-
-# Ignore development environment
-/config/environments/development.rb
+# Ignore application configuration
+/config/application.yml

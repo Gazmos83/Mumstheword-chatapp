@@ -48,7 +48,6 @@ gem 'bootstrap-will_paginate', '1.0.0'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 # gmail mailer setup
-gem 'mail'
 gem 'figaro'
 
 group :development, :test do

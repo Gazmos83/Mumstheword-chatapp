@@ -14,24 +14,24 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   test "should get home" do
     get root_path
     assert_response :success
-    assert_select "title", "Home | Ruby on Rails Tutorial Sample App"
+    assert_select "title", "Home | Mums the Word"
   end
 
   test "should get help" do
     get help_path
     assert_response :success
-    assert_select "title", "Help | Ruby on Rails Tutorial Sample App"
+    assert_select "title", "Help | Mums the Word"
   end
 
   test "should get about" do
     get about_path
     assert_response :success
-    assert_select "title", "About | Ruby on Rails Tutorial Sample App"
+    assert_select "title", "About | Mums the Word"
   end
 
   test "should get contact" do
     get contact_path
     assert_response :success
-    assert_select "title", "Contact | Ruby on Rails Tutorial Sample App"
+    assert_select "title", "Contact | Mums the Word"
   end
 end

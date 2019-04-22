@@ -41,6 +41,7 @@ gem 'will_paginate', '~> 3.1', '>= 3.1.7'
 gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.2'
 gem 'activerecord'
 gem 'actionpack'
+gem 'rmega'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

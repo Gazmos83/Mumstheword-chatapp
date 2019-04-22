@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  follower: Pingu
+  followed: lana
+
+two:
+  follower: Pingu
+  followed: malory
+
+three:
+  follower: lana
+  followed: Pingu
+
+four:
+  follower: archer
+  followed: Pingu

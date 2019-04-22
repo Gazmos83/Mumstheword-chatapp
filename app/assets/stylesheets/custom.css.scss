@@ -101,6 +101,14 @@
 
  }
 
+ /* static_pages */
+.jumbotron
+.logo {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
  /* miscellaneous */
 
 .debug_dump {
@@ -202,25 +210,27 @@ input {
   }
 }
 
+
 /* microposts */
 
 .microposts {
   list-style: none;
   padding: 0;
   li {
-    padding: 10px 0;
+    padding: 10px 0px 30px 0px;
     border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
   }
   .user {
     margin-top: 5em;
-    padding-top: 0;
+    padding-top: 5px;
   }
   .content {
     display: block;
     margin-left: 60px;
     img {
       display: block;
-      padding: 5px 0;
+      padding: 20px 0;
     }
   }
   .timestamp {

@@ -1,5 +1,5 @@
 <% provide(:title, @user.name) %>
-<%= Time.now %>
+
 <div class="row">
   <aside class="col-md-4">
     <section class="user_info">
@@ -13,9 +13,9 @@
     <% if @user.microposts.any? %>
       <h3>Microposts (<%= @user.microposts.count %>)</h3>
       <ol class="microposts">
-  
-      </ol>
+       <%= render @microposts %>
 
-    <% end %>
+      <%= will_paginate @microposts, renderer: BootstrapPagination::Rails %>
+       <% end %>
   </div>
 </div>

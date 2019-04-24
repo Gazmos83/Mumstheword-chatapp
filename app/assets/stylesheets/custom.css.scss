@@ -71,10 +71,11 @@
      text-decoration: none;
    }
  }
+ .navbar-inverse .navbar-nav > li > a { color: white;}
 
  /* footer */
  .navbar-inverse {
-  background-color: #6666ff;
+  background-color: green;
 }
  footer {
    margin-top: 45px;

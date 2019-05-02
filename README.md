@@ -1,6 +1,6 @@
 Chat-app Web-Application
 
-  This is the sample chatapp application using ordinary features which can be found on twitter.
+  This is a sample chatapp application using ordinary features which can be found on twitter.
 
 Technologies
 

@@ -1,41 +1,25 @@
-# Ruby on Rails Tutorial sample application
+Chat-app Web-Application
 
-This is the sample application for
-[*Ruby on Rails Tutorial:
-Learn Web Development with Rails*](https://www.railstutorial.org/)
-by [Michael Hartl](http://www.michaelhartl.com/).
+This is the sample chatapp application using ordinary features which can be found on twitter.
 
-## License
+Technologies
 
-All source code in the [Ruby on Rails Tutorial](https://www.railstutorial.org/)
-is available jointly under the MIT License and the Beerware License. See
-[LICENSE.md](LICENSE.md) for details.
+Ruby 2.5.3
+Rails 5.2.1
+SQLite3 for development and PostgreSQL for production.
 
-## Getting started
+Features
 
-To get started with the app, clone the repo and then install the needed gems:
+*CRUD (create / read / update / delete) on products
+*Creating / deleting comments on product page
+*webSockets
+*Creating orders with and payments with Stripe
+*Pagination on comments listing
+*Searching on products
+*Customized Authentication and authorizations (users, admins)
+*Creating user account
+*ActionMailer
+*Application ready for production
 
-```
-$ bundle install --without production
-```
 
-Next, migrate the database:
-
-```
-$ rails db:migrate
-```
-
-Finally, run the test suite to verify that everything is working correctly:
-
-```
-$ rails test
-```
-
-If the test suite passes, you'll be ready to run the app in a local server:
-
-```
-$ rails server
-```
-
-For more information, see the
-[*Ruby on Rails Tutorial* book](https://www.railstutorial.org/book).
+*The Website can be reached with the following link: https://mumstheword.herokuapp.com/

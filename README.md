@@ -13,7 +13,6 @@ Technologies
 Features
 
   -CRUD (create / read / update / delete) on products
-
   -Creating / deleting comments on product page
 
   -webSockets

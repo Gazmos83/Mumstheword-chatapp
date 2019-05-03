@@ -12,12 +12,10 @@ Technologies
 
 Features
 
-  -CRUD (create / read / update / delete) on products
-  -Creating / deleting comments on product page
-
-  -webSockets
-
-  -Creating orders with and payments with Stripe
+  - CRUD (create / read / update / delete) on products
+  - Creating / deleting comments on product page
+  - WebSockets
+  - Creating orders with and payments with Stripe
 
   -Pagination on comments listing
 

@@ -9,17 +9,18 @@ Technologies
   - SQLite3 for development and PostgreSQL for production.
 
 Features
-
-  - CRUD (create / read / update / delete) on products
-  - Creating / deleting comments on product page
+  
   - WebSockets
-  - Creating orders with and payments with Stripe
-  - Pagination on comments listing
-  - Searching on products
+  - Paginate
   - Customized Authentication and authorizations (users, admins)
   - Creating user account
   - ActionMailer
+  - Test driven development (Rails tests)
   - Application ready for production
+  - AJAX
+  
+  
+
 
 
 *The Website can be reached with the following link: https://mumstheword.herokuapp.com/
